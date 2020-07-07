@@ -1,0 +1,379 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	font-family: "微軟正黑體", sans-serif;
+}
+
+p,a,li,th,td,label{
+	font-size: 14px;
+}
+
+h2{
+	font-size: 22px;
+}
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 25px 25px;
+}
+
+/*-----以下區塊為header-----*/
+
+.header{
+	padding-bottom: 25px;
+}
+
+.toplink{
+	display: flex;
+	justify-content: flex-end;
+	background-color: #f6f6f6;
+	padding: 10px 0px;
+}
+
+.toplink li{
+	text-align: center;
+	padding-right: 10px;
+	color: #cdcdcd;
+}
+
+.toplink li a{
+	display: block;
+	text-align: center;
+	padding-left: 18px;
+	text-decoration: none;
+}
+
+.toplink li .pic1{
+	background: url(../IMG/FB-logo.png)  no-repeat;
+}
+
+.toplink li .pic2{
+	background: url(../IMG/Twitter-logo.png)  no-repeat;
+}
+
+.toplink li .color1{
+	color: #4960a1;
+}
+
+.toplink li .color2{
+	color: #01b0fc ;
+}
+
+.box{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0 0 25px;
+}
+
+.box h1 a{
+	display: block;
+	width: 171px;
+	height: 36px;
+	background: url(../IMG/六角logo_綠.png) no-repeat;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* 主選單 */
+.box .menu{
+	display: flex;
+}
+
+.box menu > li{
+	position: relative;
+}
+
+.menu a{
+	width: 80px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #00ce9b;
+	padding: 10px 10px 17px;
+	border-bottom: 3px solid transparent; 
+}
+
+.menu a:hover{
+	border-bottom: 3px solid #00ce9b;
+}
+
+/* 次選單 */
+
+.dropdown-open{
+	position: absolute;
+	background-color: rgb(223, 253, 236);
+	z-index: 3;
+	display: none;
+}
+
+.dropdown-open li a{
+	color: #079670;
+}
+
+/* ---------------- */
+.banner{
+	width: 1000px;
+	height: 346px;
+	display: flex;
+	align-items: center;
+	position : relative;
+}
+
+.banner h2{
+	position: absolute;
+	width: 950px;
+	color: #ffffff;
+	font-size: 30px;
+	line-height: 1.5;
+	padding: 40px 25px;
+	background-color: rgb(2, 2, 2, 0.15);
+	z-index: 2;
+}
+
+/* swiper輪播 */
+
+.swiper-container {
+    width: 1000px;
+    height: 100%;
+}
+
+.imgposition{
+	transform: translate(0,-120px);
+}
+
+.imgposition2{
+	transform: translate(0,-60px);
+}
+
+
+/*-----以下區塊為imformation-----*/
+
+.information{
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 20px;
+	margin-bottom: 10px;
+}
+
+.item{
+	width: 260px;
+	padding: 25px 20px;
+	box-shadow: 0 5px 5px rgb(204, 204, 204);
+	text-align: center;
+}
+
+.item a{
+	height: 136px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item h2{
+	font-size: 18px;
+	margin: 15px 0;
+}
+
+.item p{
+	text-align: justify;
+	line-height: 1.5;
+}
+
+.item ul{
+	list-style: disc inside;
+}
+
+.item li{
+	text-align: left;
+	line-height: 1.5;
+}
+
+/*-----以下區塊為different-----*/
+
+.different{
+	padding: 20px 80px 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.different h2{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.different th,.different td{
+	width: 190px;
+	text-align: left;
+	border-bottom: 1px solid #dedede;
+	padding: 10px 0px 10px 25px ;
+}
+
+.different th{
+	font-weight: bold;
+	background-color: #f7f7f7;
+	border-top: 1px solid #dedede;
+}
+
+.tcolor{
+	color: #00b67a;
+}
+
+/*-----以下區塊為form-----*/
+
+form{
+	background: -webkit-linear-gradient(#00654a, #009972);
+	padding: 5px 20px 30px 20px;
+}
+
+form h2{
+	color: white;
+	text-align: center;
+	line-height: 1.5;
+	margin: 30px 0;
+}
+
+.feedback{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+textarea{
+	width: 440px;
+	height: 225px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 0;
+}
+
+.personbox{
+	width: 440px;
+}
+
+.container{
+	margin-bottom: 10px;
+}
+
+.container label{
+	display: block;
+	color: white;
+}
+
+.container input{
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0;
+	border-radius: 5px;
+	border: 0;
+	box-sizing: border-box;
+}
+
+.buttonstyle{
+	padding: 10px 25px;
+	color: white;
+	background-color: #00cc98;
+	border: 0;
+	border-radius: 5px;
+	float: right;
+}
+
+.buttonstyle:hover{
+	background-color: #fff;
+	color: #00cc98;
+	cursor: pointer;
+}
+
+.clearfix:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/*-----以下區塊為footer-----*/
+
+.footer{
+	padding: 25px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer .pbox a{
+	color:#000;
+	line-height: 1.5;
+	text-decoration: none;
+}
+
+.pbox a span{
+	color: #eb86ab;
+}
+
+/* 回到最上層 */
+
+.gotop{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	padding: 20px 20px;
+	font-size: 50px;
+	border-radius: 50%;
+	background-color: rgb(164, 236, 226);
+	box-shadow: 2px 3px 5px #bdbdbd;
+}
+
+.gotop:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: 0.5s;
+	color: white;
+	background-color: rgb(101, 156, 158);
+}
+
+.gotop:active{
+	transform: scale(0.8);
+}
